@@ -1,9 +1,6 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-<!DOCTYPE html>
-<html lang="ru">
-<head>
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
@@ -12,29 +9,76 @@
     <title>Title</title>
     <style>
 
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
+
+        #body {
+            background: #1e1f22;
         }
 
-        #id {
-            display: none
+        #main {
+            display: block
+            text-align: center;
         }
 
+        #about {
+            display: none;
+        }
+
+        #information {
+            display: none;
+        }
+
+        button {
+            border: 0;
+            margin-top: 50px;
+            height: 60px;
+            width: 200px;
+            color: green;
+            background: white;
+            border-radius: 25px;
+            font-size: 20px;
+        }
+
+        button:hover {
+            background: black;
+        }
 
     </style>
 
 </head>
-<body style="background: #1e1f22">
-    <div id="main" style="background: black">
-        <button style="border: 0; margin-top: 50px; height: 60px; width: 200px; color: green; background: white; border-radius: 25px; font-size: 20px">a</button>
+<body id="body">
+    <div id="main">
+        <p style="color: white; text-align: center">Проверь, насколько хорошо</p>
+        <p style="color: white; text-align: center">ты знаешь исторические флаги РФ</p>
+        <button id="start" type="button">Начать тест</button>
         <p></p>
-        <button style="border: 0; margin-top: 50px; height: 60px; width: 200px; color: green; background: white; border-radius: 25px">a</button>
-        <p></p>
-        <button style="border: 0; margin-top: 50px; height: 60px; width: 200px; color: green; background: white; border-radius: 25px">a</button>
+        <button id="us" type="button">О нас</button>
     </div>
 
+    <div id='about'>
+        <p style="color: white; text-align: center">Lorem</p>
+        <button id="back_about" type="button">Назад</button>
+    </div>
+
+    <div id='information'>
+        <p>Lorem</p>
+    </div>
+    <script src="https://telegram.org/js/telegram-web-app.js?59"></script>
+    <script>
+        let tg = window.Telegram.WebApp;
+        let about = document.getElementById("us");
+        let start = document.getElementById("start");
+        let back_about = document.getElementById("back_about");
+
+        about.addEventListener("click", () => {
+            document.getElementById("main").style.display = "none";
+            document.getElementById("about").style.display = "block";
+        });
+
+        back_about.addEventListener("click", () => {
+            document.getElementById("about").style.display = "none";
+            document.getElementById("main").style.display = "block";
+        });
+
+    </script>
 </body>
 </html>
-
