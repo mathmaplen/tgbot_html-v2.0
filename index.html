@@ -53,15 +53,16 @@
 </head>
 <body id="body">
     <div id="main">
-        <p style="margin-top: 50px; color: white; text-align: center">Проверь, насколько хорошо</p>
-        <p style="color: white; text-align: center">ты знаешь исторические флаги РФ</p>
+        <p style="margin-top: 50px; color: white; text-align: center; font-size: 18px">С Днём Государственного флага Российской Федерации! </p>
+        <p style="color: white; text-align: center; font-size: 18px">Проверь, насколько хорошо ты знаешь исторические флаги РФ.</p>
+        <p style="color: white; text-align: center; font-size: 18px">Узнай новое не только об истории, но и о нас в разделе «О нас»!</p>
         <button id="start" type="button">Начать тест</button>
         <p></p>
         <button id="us" type="button">О нас</button>
     </div>
 
     <div id='about'>
-        <p style="color: white; text-align: center">Lorem</p>
+        <p style="color: white; text-align: center" id="text_about">Lorem</p>
         <button id="back_about" type="button">Назад</button>
     </div>
 
@@ -74,9 +75,12 @@
         let about = document.getElementById("us");
         let start = document.getElementById("start");
         let back_about = document.getElementById("back_about");
+        var test = 0;
 
         about.addEventListener("click", () => {
+            test += 1;
             document.getElementById("main").style.display = "none";
+            document.getElementById("text_about").textContent = test;
             document.getElementById("about").style.display = "block";
         });
 
