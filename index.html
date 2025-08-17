@@ -64,6 +64,7 @@
 
 
 <div id="q_1" style="display: none">
+    <img src="q_1.jpg" width="300" height="200">
     <button id="n_1" style="display: none">Дальше</button>
 </div>
 
@@ -145,6 +146,12 @@
     back_about.addEventListener("click", () => {
         document.getElementById("about").style.display = "none";
         document.getElementById("main").style.display = "block";
+    });
+
+
+    start.addEventListener("click", () => {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("q_1").style.display = "block";
     });
 
 
