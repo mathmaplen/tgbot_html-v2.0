@@ -28,7 +28,7 @@
             display: none;
         }
 
-        button {
+        .button {
             border: 0;
             border-radius: 5px;
             margin-top: 50px;
@@ -40,11 +40,7 @@
             font-size: 20px;
         }
 
-        #start {
-            margin-top: 125px;
-        }
-
-        button:hover {
+        .button:hover {
             background: black;
         }
 
@@ -52,43 +48,106 @@
 
 </head>
 <body id="body">
-    <div id="main">
-        <p style="margin-top: 50px; color: white; text-align: center; font-size: 18px">С Днём Государственного флага Российской Федерации! </p>
-        <p style="color: white; text-align: center; font-size: 18px">Проверь, насколько хорошо ты знаешь исторические флаги РФ.</p>
-        <p style="color: white; text-align: center; font-size: 18px">Узнай новое не только об истории, но и о нас в разделе «О нас»!</p>
-        <button id="start" type="button">Начать тест</button>
-        <p></p>
-        <button id="us" type="button">О нас</button>
-    </div>
 
-    <div id='about'>
-        <p style="color: white; text-align: center" id="text_about">Lorem</p>
-        <button id="back_about" type="button">Назад</button>
-    </div>
 
-    <div id='information'>
-        <p>Lorem</p>
-    </div>
-    <script src="https://telegram.org/js/telegram-web-app.js?59"></script>
-    <script>
-        let tg = window.Telegram.WebApp;
-        let about = document.getElementById("us");
-        let start = document.getElementById("start");
-        let back_about = document.getElementById("back_about");
-        var test = 0;
+<div id="main">
+    <p style="margin-top: 50px; color: white; text-align: center; font-size: 18px">С Днём Государственного флага
+        Российской Федерации! </p>
+    <p style="color: white; text-align: center; font-size: 18px">Проверь, насколько хорошо ты знаешь исторические флаги
+        РФ.</p>
+    <p style="color: white; text-align: center; font-size: 18px">Узнай новое не только об истории, но и о нас в разделе
+        «О нас»!</p>
+    <button id="start" type="button" class="button">Начать тест</button>
+    <p></p>
+    <button id="us" type="button" class="button">О нас</button>
+</div>
 
-        about.addEventListener("click", () => {
-            test += 1;
-            document.getElementById("main").style.display = "none";
-            document.getElementById("text_about").textContent = test;
-            document.getElementById("about").style.display = "block";
-        });
 
-        back_about.addEventListener("click", () => {
-            document.getElementById("about").style.display = "none";
-            document.getElementById("main").style.display = "block";
-        });
+<div id="q_1" style="display: none">
+    <button id="n_1" style="display: none">Дальше</button>
+</div>
 
-    </script>
+<div id="q_2" style="display: none">
+    <button id="n_2" style="display: none">Дальше</button>
+</div>
+
+<div id="q_3" style="display: none">
+    <button id="n_3" style="display: none">Дальше</button>
+</div>
+
+<div id="q_4" style="display: none">
+    <button id="n_4" style="display: none">Дальше</button>
+</div>
+
+<div id="q_5" style="display: none">
+    <button id="n_5" style="display: none">Дальше</button>
+</div>
+
+<div id="q_6" style="display: none">
+    <button id="n_6" style="display: none">Дальше</button>
+</div>
+
+<div id="q_7" style="display: none">
+    <button id="n_7" style="display: none">Дальше</button>
+</div>
+
+<div id="q_8" style="display: none">
+    <button id="n_8" style="display: none">Дальше</button>
+</div>
+
+<div id="q_9" style="display: none">
+    <button id="n_9" style="display: none">Дальше</button>
+</div>
+
+
+<div id='about'>
+    <p style="color: white; text-align: center">Детский общественный совет при Уполномоченном по правам
+        ребенка в Республике Башкортостан (#ДОСРБ) – это не просто группа активных ребят, а сплочённая команда из более
+        чем 69 представителей со всей республики (по одному и более от каждого муниципалитета). Здесь подростки учатся
+        отстаивать свои права, предлагают полезные инициативы и участвуют в масштабных проектах. Главная миссия ДОС –
+        быть голосом детей Республики Башкортостан. </p>
+    <p style="color: white; text-align: center">Совет создан для развития активной гражданской позиции
+        подрастающего поколения. Его участники могут влиять на решения, касающиеся образования, безопасности, досуга и
+        других важных сфер.</p>
+    <p style="color: white; text-align: center">ДОС – это мост между детьми и взрослыми. Мы считаем, что мнение детей
+        должно учитываться при принятии решений, которые напрямую влияют на их жизнь.
+        Деятельность совета поделена на 5 направлений.
+        В рамках выбранных направлений ребята разрабатывают проекты, выдвигают идеи и участвуют в инициативах, которые
+        меняют жизнь к лучшему.</p>
+    <p style="color: white; text-align: center">Данный проект, который вы сейчас испытываете, разработали патриотическое
+        направление совместно с нашим программистом.</p>
+    <p style="color: white; text-align: center">Идейные авторы: двое действующих на данный момент сопредседателей — Алия Рустемовна Набиуллина (@violu_na) и Николай Сергеевич Панченко (@koluas1k).
+Программист и сосоздатель: Тульников Матвей Максимович (@flipochkin).</p>
+    <p></p>
+    <p style="color: white; text-align: center">Наши соцсети (подписывайтесь, там много интересного):</p>
+    <p></p>
+    <a style="color: white; text-align: center" href="https://t.me/dos_upprrb">Телеграмм канал</a>
+    <p></p>
+    <a style="color: white; text-align: center" href="https://vk.com/dosrb">Сообщество в ВК</a>
+    <p></p>
+    <button id="back_about" type="button" class="button">Назад</button>
+</div>
+
+<script src="https://telegram.org/js/telegram-web-app.js?59"></script>
+<script>
+    let tg = window.Telegram.WebApp;
+    let about = document.getElementById("us");
+    let start = document.getElementById("start");
+    let back_about = document.getElementById("back_about");
+    var test_True = 0;
+
+
+    about.addEventListener("click", () => {
+        document.getElementById("main").style.display = "none";
+        document.getElementById("about").style.display = "block";
+    });
+
+    back_about.addEventListener("click", () => {
+        document.getElementById("about").style.display = "none";
+        document.getElementById("main").style.display = "block";
+    });
+
+
+</script>
 </body>
 </html>
