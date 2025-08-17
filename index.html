@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="='ie=edge">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <script src="https://telegram.org/js/telegram-web-app.js?59"></script>
     <title>Title</title>
     <style>
@@ -16,7 +16,7 @@
         }
 
         #main {
-            display: block
+            display: block;
             text-align: center;
         }
 
@@ -64,8 +64,21 @@
 
 
 <div id="q_1" style="display: none">
-    <img src="q_1.jpg" height="45%" width="45%">
-    <button id="n_1" style="display: none">Дальше</button>
+    <img src="q_1.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_1_1f" style="height: 40px; width: 90%">Гербовое знамя Петра I</button>
+    <p></p>
+    <button id="a_1_2f" style="height: 40px; width: 90%">Андреевский флаг</button>
+    <p></p>
+    <button id="a_1_3f" style="height: 40px; width: 90%">Знамя Победы</button>
+    <p></p>
+    <button id="a_1_4t" style="height: 40px; width: 90%">Стяг «Всемилостивейшего Спаса»</button>
+    <p style="display: none; color: white" id="int_1">Стяг «Всемилостивейшего Спаса» — русский военный стяг XVI-XVII веков, использовавшийся при Иване Грозном. На
+        полотнище изображён образ Христа Пантократора. Этот стяг сопровождал русские войска в Казанском походе 1552
+        года, символизируя божественное покровительство.
+    </p>
+
+    <button class="button" id="n_1" style="display: none">Дальше</button>
 </div>
 
 <div id="q_2" style="display: none">
@@ -117,8 +130,9 @@
         меняют жизнь к лучшему.</p>
     <p style="color: white; text-align: center">Данный проект, который вы сейчас испытываете, разработали патриотическое
         направление совместно с нашим программистом.</p>
-    <p style="color: white; text-align: center">Идейные авторы: двое действующих на данный момент сопредседателей — Алия Рустемовна Набиуллина (@violu_na) и Николай Сергеевич Панченко (@koluas1k).
-Программист и сосоздатель: Тульников Матвей Максимович (@flipochkin).</p>
+    <p style="color: white; text-align: center">Идейные авторы: двое действующих на данный момент сопредседателей — Алия
+        Рустемовна Набиуллина (@violu_na) и Николай Сергеевич Панченко (@koluas1k).
+        Программист и сосоздатель: Тульников Матвей Максимович (@flipochkin).</p>
     <p></p>
     <p style="color: white; text-align: center">Наши соцсети (подписывайтесь, там много интересного):</p>
     <p></p>
@@ -135,6 +149,13 @@
     let about = document.getElementById("us");
     let start = document.getElementById("start");
     let back_about = document.getElementById("back_about");
+
+    let a_1_1f = document.getElementById("a_1_1f");
+    let a_1_2f = document.getElementById("a_1_2f");
+    let a_1_3f = document.getElementById("a_1_3f");
+    let a_1_4t = document.getElementById("a_1_4t");
+    let n_1 = document.getElementById("n_1");
+
     var test_True = 0;
 
 
@@ -155,8 +176,41 @@
     });
 
 
+
+    a_1_1f.addEventListener("click", () => {
+        document.getElementById("a_1_1f").style.background = "red";
+        document.getElementById("a_1_4t").style.background = "green";
+        document.getElementById("int_1").style.display = "block";
+        document.getElementById("n_1").style.display = "block";
+    });
+
+    a_1_2f.addEventListener("click", () => {
+        document.getElementById("a_1_2f").style.background = "red";
+        document.getElementById("a_1_4t").style.background = "green";
+        document.getElementById("int_1").style.display = "block";
+        document.getElementById("n_1").style.display = "block";
+    });
+
+    a_1_3f.addEventListener("click", () => {
+        document.getElementById("a_1_3f").style.background = "red";
+        document.getElementById("a_1_4t").style.background = "green";
+        document.getElementById("int_1").style.display = "block";
+        document.getElementById("n_1").style.display = "block";
+    });
+
+    a_1_4t.addEventListener("click", () => {
+        document.getElementById("a_1_4t").style.background = "green";
+        document.getElementById("int_1").style.display = "block";
+        document.getElementById("n_1").style.display = "block";
+        test_True += 1;
+    });
+
+    n_1.addEventListener("click", () => {
+        document.getElementById("q_1").style.display = "none";
+        document.getElementById("q_2").style.display = "block";
+    });
+
+
 </script>
 </body>
 </html>
-
-
