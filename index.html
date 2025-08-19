@@ -1,5 +1,7 @@
 <!DOCTYPE html>
 <html lang="ru">
+<!--1 2 3 4 5 6 7 8 9-->
+<!--4 3 4 1 2 4 1 4 3-->
 <head>
     <meta charset="UTF-8">
     <meta name="viewport"
@@ -44,12 +46,23 @@
             background: black;
         }
 
+        .button-q {
+            height: 40px;
+            width: 90%;
+        }
+
+        .button-q:disabled {
+            height: 40px;
+            width: 90%;
+            background: white;
+            color: black;
+        }
+
     </style>
 
 </head>
 <body id="body">
-
-
+<!--главная страница-->
 <div id="main">
     <p style="margin-top: 50px; color: white; text-align: center; font-size: 18px">С Днём Государственного флага
         Российской Федерации! </p>
@@ -62,58 +75,7 @@
     <button id="us" type="button" class="button">О нас</button>
 </div>
 
-
-<div id="q_1" style="display: none">
-    <img src="q_1.jpg" height="70%" width="70%">
-    <p></p>
-    <button id="a_1_1f" style="height: 40px; width: 90%">Гербовое знамя Петра I</button>
-    <p></p>
-    <button id="a_1_2f" style="height: 40px; width: 90%">Андреевский флаг</button>
-    <p></p>
-    <button id="a_1_3f" style="height: 40px; width: 90%">Знамя Победы</button>
-    <p></p>
-    <button id="a_1_4t" style="height: 40px; width: 90%">Стяг «Всемилостивейшего Спаса»</button>
-    <p style="display: none; color: white" id="int_1">Стяг «Всемилостивейшего Спаса» — русский военный стяг XVI-XVII веков, использовавшийся при Иване Грозном. На
-        полотнище изображён образ Христа Пантократора. Этот стяг сопровождал русские войска в Казанском походе 1552
-        года, символизируя божественное покровительство.
-    </p>
-
-    <button class="button" id="n_1" style="display: none">Дальше</button>
-</div>
-
-<div id="q_2" style="display: none">
-    <button id="n_2" style="display: none">Дальше</button>
-</div>
-
-<div id="q_3" style="display: none">
-    <button id="n_3" style="display: none">Дальше</button>
-</div>
-
-<div id="q_4" style="display: none">
-    <button id="n_4" style="display: none">Дальше</button>
-</div>
-
-<div id="q_5" style="display: none">
-    <button id="n_5" style="display: none">Дальше</button>
-</div>
-
-<div id="q_6" style="display: none">
-    <button id="n_6" style="display: none">Дальше</button>
-</div>
-
-<div id="q_7" style="display: none">
-    <button id="n_7" style="display: none">Дальше</button>
-</div>
-
-<div id="q_8" style="display: none">
-    <button id="n_8" style="display: none">Дальше</button>
-</div>
-
-<div id="q_9" style="display: none">
-    <button id="n_9" style="display: none">Дальше</button>
-</div>
-
-
+<!--страница о нас-->
 <div id='about'>
     <p style="color: white; text-align: center">Детский общественный совет при Уполномоченном по правам
         ребенка в Республике Башкортостан (#ДОСРБ) – это не просто группа активных ребят, а сплочённая команда из более
@@ -136,11 +98,198 @@
     <p></p>
     <p style="color: white; text-align: center">Наши соцсети (подписывайтесь, там много интересного):</p>
     <p></p>
-    <a style="color: white; text-align: center" href="https://t.me/dos_upprrb">Телеграмм канал</a>
+    <a style="text-align: center" href="https://t.me/dos_upprrb">Телеграмм канал</a>
     <p></p>
-    <a style="color: white; text-align: center" href="https://vk.com/dosrb">Сообщество в ВК</a>
+    <a style="text-align: center" href="https://vkв.com/dosrb">Сообщество в ВК</a>
     <p></p>
     <button id="back_about" type="button" class="button">Назад</button>
+</div>
+
+<!--вопрос 1-->
+<div id="q_1" style="display: none">
+    <img src="q_1.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_1_1f" class="button-q" type="button">Гербовое знамя Петра I</button>
+    <p></p>
+    <button id="a_1_2f" class="button-q" type="button">Андреевский флаг</button>
+    <p></p>
+    <button id="a_1_3f" class="button-q" type="button">Знамя Победы</button>
+    <p></p>
+    <button id="a_1_4t" class="button-q" type="button">Стяг «Всемилостивейшего Спаса»</button>
+    <p style="display: none; color: white" id="int_1">Стяг «Всемилостивейшего Спаса» — русский военный стяг XVI-XVII
+        веков, использовавшийся при Иване Грозном. На
+        полотнище изображён образ Христа Пантократора. Этот стяг сопровождал русские войска в Казанском походе 1552
+        года, символизируя божественное покровительство.
+    </p>
+
+    <button class="button" id="n_1" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 2-->
+<div id="q_2" style="display: none">
+    <img src="q_2.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_2_1f" class="button-q" type="button">Петровский штандарт</button>
+    <p></p>
+    <button id="a_2_2f" class="button-q" type="button">Флаг Новгородской республики</button>
+    <p></p>
+    <button id="a_2_3t" class="button-q" type="button">Флаг корабля "Орел"</button>
+    <p></p>
+    <button id="a_2_4f" class="button-q" type="button">Флаг Российской республики</button>
+    <p style="display: none; color: white" id="int_2">Корабль "Орёл" был первым русским военным кораблем
+        западноевропейского типа, построенным по указу царя Алексея Михайловича. Капитан корабля, Давид Бутлер,
+        обратился к царю с вопросом о флаге, указав, что флаг должен соответствовать государству, которому принадлежит
+        корабль. Примечательно, что на изображении выше лишь одна из 4 возможных вариаций флага.
+    </p>
+
+    <button class="button" id="n_2" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 3-->
+<div id="q_3" style="display: none">
+    <img src="q_3.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_3_1f" class="button-q" type="button">Флаг РСФСР</button>
+    <p></p>
+    <button id="a_3_2f" class="button-q" type="button">Флаг Российской Федерации</button>
+    <p></p>
+    <button id="a_3_3f" class="button-q" type="button">Флаг царя Тверского</button>
+    <p></p>
+    <button id="a_3_4t" class="button-q" type="button">Флаг царя Московского</button>
+    <p style="display: none; color: white" id="int_3">6 (16) августа 1693 года, во время плавания Петра I в Белом море с
+        отрядом военных кораблей, построенных в Архангельске, на яхте «Святой Пётр» был поднят так называемый флаг царя
+        Московского. Оригинал этого старейшего из сохранившихся российских флагов ныне находится в Центральном
+        военно-морском музее в Санкт-Петербурге (инвентарный номер 10556)
+    </p>
+
+    <button class="button" id="n_3" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 4-->
+<div id="q_4" style="display: none">
+    <img src="q_4.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_4_1t" class="button-q" type="button">Флаг Российской империи с 1858 по 1883</button>
+    <p></p>
+    <button id="a_4_2f" class="button-q" type="button">Георгиевская лента</button>
+    <p></p>
+    <button id="a_4_3f" class="button-q" type="button">Флаг СССР</button>
+    <p></p>
+    <button id="a_4_4f" class="button-q" type="button">Андреевский флаг</button>
+    <p style="display: none; color: white" id="int_4">11 (23) июня 1858 года по инициативе Б. В. Кёне указом императора
+        Александра ІІ утверждён рисунок флага «гербовых цветов Империи» (чёрно-жёлто-белый). Сфера применения нового
+        флага была ограниченной: он предназначался прежде всего для украшения зданий, улиц и площадей в торжественных
+        случаях.
+    </p>
+
+    <button class="button" id="n_4" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 5-->
+<div id="q_5" style="display: none">
+    <img src="q_5.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_5_1f" class="button-q" type="button">Флаг Российской Американской компании</button>
+    <p></p>
+    <button id="a_5_2t" class="button-q" type="button">Флаг декабристов</button>
+    <p></p>
+    <button id="a_5_3f" class="button-q" type="button">Флаг Российской федерации до 1993г.</button>
+    <p></p>
+    <button id="a_5_4f" class="button-q" type="button">Флаг "Единения царя с народом" 1914г.</button>
+    <p style="display: none; color: white" id="int_5">В 1914 году в Российской империи был введен в обиход новый флаг,
+        представлявший собой бело-сине-красный триколор с добавлением в крыже (верхнем углу у древка) чёрного двуглавого
+        орла на жёлтом фоне. Этот флаг символизировал единение царя с народом.
+    </p>
+
+    <button class="button" id="n_5" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 6-->
+<div id="q_6" style="display: none">
+    <img src="q_6.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_6_1f" class="button-q" type="button">Флаг Российской Республики</button>
+    <p></p>
+    <button id="a_6_2f" class="button-q" type="button">Флаг СССР</button>
+    <p></p>
+    <button id="a_6_3f" class="button-q" type="button">Знамя Победы</button>
+    <p></p>
+    <button id="a_6_4t" class="button-q" type="button">Флаг РСФСР</button>
+    <p style="display: none; color: white" id="int_6">В окантованном желтым кантом крыже на красном фоне располагались
+        крестообразно буквы «РСФСР», а под ними надпись, расшифровывающая данную аббревиатуру: «Российская советская
+        федеративная социалистическая республика». Этот флаг был принят как единый: и государственный, и военный, и
+        морской (в том числе военно-морской) в 1918г.
+    </p>
+
+    <button class="button" id="n_6" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 7-->
+<div id="q_7" style="display: none">
+    <img src="q_7.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_7_1t" class="button-q" type="button">Флаг СССР</button>
+    <p></p>
+    <button id="a_7_2f" class="button-q" type="button">Флаг Коминтерна</button>
+    <p></p>
+    <button id="a_7_3f" class="button-q" type="button">Флаг ВЛКСМ</button>
+    <p></p>
+    <button id="a_7_4f" class="button-q" type="button">Флаг Российской империи</button>
+    <p style="display: none; color: white" id="int_7">Флаг СССР был официально утвержден 18 апреля 1924 года и являлся
+        государственным символом Советского Союза до его распада в 1991 году. Красный цвет символизирует кровь, пролитую
+        трудящимися в борьбе за свободу. Также красный цвет является символом революции и социализма. Серп- символ
+        крестьянства, а молот- рабочих.
+    </p>
+
+    <button class="button" id="n_7" style="display: none">Дальше</button>
+</div>
+
+<!--вопрос 8-->
+<div id="q_8" style="display: none">
+    <img src="q_8.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_8_1f" class="button-q" type="button">Президентский штандарт</button>
+    <p></p>
+    <button id="a_8_2f" class="button-q" type="button">Флаг Российской Федерации с 1993г.</button>
+    <p></p>
+    <button id="a_8_3f" class="button-q" type="button">Флаг Российской республики</button>
+    <p></p>
+    <button id="a_8_4t" class="button-q" type="button">Флаг Российской Федерации с 1991г.</button>
+    <p style="display: none; color: white" id="int_8">бело-сине-красный, является государственным флагом РСФСР с 1991 по
+        1993 год. Он состоит из трех горизонтальных полос: верхней белого цвета, средней — лазоревого (синего) цвета и
+        нижней — алого (красного) цвета. В 1991 году этот флаг был восстановлен в качестве государственного флага
+        России.
+    </p>
+
+    <button class="button" id="n_8" style="display: none">Дальше</button>
+</div>
+
+
+<!--вопрос 9-->
+<div id="q_9" style="display: none">
+    <img src="q_8.jpg" height="70%" width="70%">
+    <p></p>
+    <button id="a_9_1f" class="button-q" type="button">Флаг Российской Федерации с 1991г</button>
+    <p></p>
+    <button id="a_9_2f" class="button-q" type="button">Андреевский флаг</button>
+    <p></p>
+    <button id="a_9_3t" class="button-q" type="button">Флаг Российской Федерации с 1993г</button>
+    <p></p>
+    <button id="a_9_4f" class="button-q" type="button">Флаг РСФСР</button>
+    <p style="display: none; color: white" id="int_9">Флаг Российской Федерации, триколор, символизирует единство, мир,
+        чистоту и духовность России. Белый цвет олицетворяет свободу и независимость, синий - веру, постоянство и
+        верность, а красный - энергию, силу и кровь, пролитую за Родину. Эти цвета, тесно переплетенные в истории
+        страны, отражают ее прошлое, настоящее и устремления в будущее.
+    </p>
+
+    <button class="button" id="n_9" style="display: none">Дальше</button>
+</div>
+
+
+<!--последняя страница-->
+<div id="last_p" style="display: none">
+    <p id="last" style="color: white"></p>
+    <button class="button" id="last_back">В главное меню</button>
 </div>
 
 <script src="https://telegram.org/js/telegram-web-app.js?59"></script>
@@ -150,13 +299,67 @@
     let start = document.getElementById("start");
     let back_about = document.getElementById("back_about");
 
+    var test_True = 0;
+
     let a_1_1f = document.getElementById("a_1_1f");
     let a_1_2f = document.getElementById("a_1_2f");
     let a_1_3f = document.getElementById("a_1_3f");
     let a_1_4t = document.getElementById("a_1_4t");
     let n_1 = document.getElementById("n_1");
 
-    var test_True = 0;
+    let a_2_1f = document.getElementById("a_2_1f");
+    let a_2_2f = document.getElementById("a_2_2f");
+    let a_2_3t = document.getElementById("a_2_3t");
+    let a_2_4f = document.getElementById("a_2_4f");
+    let n_2 = document.getElementById("n_2");
+
+    let a_3_1f = document.getElementById("a_3_1f");
+    let a_3_2f = document.getElementById("a_3_2f");
+    let a_3_3f = document.getElementById("a_3_3f");
+    let a_3_4t = document.getElementById("a_3_4t");
+    let n_3 = document.getElementById("n_3");
+
+    let a_4_1t = document.getElementById("a_4_1t");
+    let a_4_2f = document.getElementById("a_4_2f");
+    let a_4_3f = document.getElementById("a_4_3f");
+    let a_4_4f = document.getElementById("a_4_4f");
+    let n_4 = document.getElementById("n_4");
+
+    let a_5_1f = document.getElementById("a_5_1f");
+    let a_5_2t = document.getElementById("a_5_2t");
+    let a_5_3f = document.getElementById("a_5_3f");
+    let a_5_4f = document.getElementById("a_5_4f");
+    let n_5 = document.getElementById("n_5");
+
+    let a_6_1f = document.getElementById("a_6_1f");
+    let a_6_2f = document.getElementById("a_6_2f");
+    let a_6_3f = document.getElementById("a_6_3f");
+    let a_6_4t = document.getElementById("a_6_4t");
+    let n_6 = document.getElementById("n_6");
+
+    let a_7_1t = document.getElementById("a_7_1t");
+    let a_7_2f = document.getElementById("a_7_2f");
+    let a_7_3f = document.getElementById("a_7_3f");
+    let a_7_4f = document.getElementById("a_7_4f");
+    let n_7 = document.getElementById("n_7");
+
+    let a_8_1f = document.getElementById("a_8_1f");
+    let a_8_2f = document.getElementById("a_8_2f");
+    let a_8_3f = document.getElementById("a_8_3f");
+    let a_8_4t = document.getElementById("a_8_4t");
+    let n_8 = document.getElementById("n_8");
+
+    let a_9_1f = document.getElementById("a_9_1f");
+    let a_9_2f = document.getElementById("a_9_2f");
+    let a_9_3t = document.getElementById("a_9_3t");
+    let a_9_4f = document.getElementById("a_9_4f");
+    let n_9 = document.getElementById("n_9");
+
+    let last_back = document.getElementById("last_back");
+    let last = document.getElementById("last");
+    let last_p = document.getElementById("last_p");
+
+
 
 
     about.addEventListener("click", () => {
@@ -182,6 +385,11 @@
         document.getElementById("a_1_4t").style.background = "green";
         document.getElementById("int_1").style.display = "block";
         document.getElementById("n_1").style.display = "block";
+
+        document.getElementById('a_1_1f').disabled = true;
+        document.getElementById('a_1_2f').disabled = true;
+        document.getElementById('a_1_3f').disabled = true;
+        document.getElementById('a_1_4t').disabled = true;
     });
 
     a_1_2f.addEventListener("click", () => {
@@ -189,6 +397,11 @@
         document.getElementById("a_1_4t").style.background = "green";
         document.getElementById("int_1").style.display = "block";
         document.getElementById("n_1").style.display = "block";
+
+        document.getElementById('a_1_1f').disabled = true;
+        document.getElementById('a_1_2f').disabled = true;
+        document.getElementById('a_1_3f').disabled = true;
+        document.getElementById('a_1_4t').disabled = true;
     });
 
     a_1_3f.addEventListener("click", () => {
@@ -196,6 +409,11 @@
         document.getElementById("a_1_4t").style.background = "green";
         document.getElementById("int_1").style.display = "block";
         document.getElementById("n_1").style.display = "block";
+
+        document.getElementById('a_1_1f').disabled = true;
+        document.getElementById('a_1_2f').disabled = true;
+        document.getElementById('a_1_3f').disabled = true;
+        document.getElementById('a_1_4t').disabled = true;
     });
 
     a_1_4t.addEventListener("click", () => {
@@ -203,6 +421,11 @@
         document.getElementById("int_1").style.display = "block";
         document.getElementById("n_1").style.display = "block";
         test_True += 1;
+
+        document.getElementById('a_1_1f').disabled = true;
+        document.getElementById('a_1_2f').disabled = true;
+        document.getElementById('a_1_3f').disabled = true;
+        document.getElementById('a_1_4t').disabled = true;
     });
 
     n_1.addEventListener("click", () => {
@@ -211,6 +434,450 @@
     });
 
 
+
+    a_2_1f.addEventListener("click", () => {
+        document.getElementById("a_2_1f").style.background = "red";
+        document.getElementById("a_2_3t").style.background = "green";
+        document.getElementById("int_2").style.display = "block";
+        document.getElementById("n_2").style.display = "block";
+
+        document.getElementById('a_2_1f').disabled = true;
+        document.getElementById('a_2_2f').disabled = true;
+        document.getElementById('a_2_4f').disabled = true;
+        document.getElementById('a_2_3t').disabled = true;
+    });
+
+    a_2_2f.addEventListener("click", () => {
+        document.getElementById("a_2_2f").style.background = "red";
+        document.getElementById("a_2_3t").style.background = "green";
+        document.getElementById("int_2").style.display = "block";
+        document.getElementById("n_2").style.display = "block";
+
+        document.getElementById('a_2_1f').disabled = true;
+        document.getElementById('a_2_2f').disabled = true;
+        document.getElementById('a_2_4f').disabled = true;
+        document.getElementById('a_2_3t').disabled = true;
+    });
+
+    a_2_4f.addEventListener("click", () => {
+        document.getElementById("a_2_4f").style.background = "red";
+        document.getElementById("a_2_3t").style.background = "green";
+        document.getElementById("int_2").style.display = "block";
+        document.getElementById("n_2").style.display = "block";
+
+        document.getElementById('a_2_1f').disabled = true;
+        document.getElementById('a_2_2f').disabled = true;
+        document.getElementById('a_2_4f').disabled = true;
+        document.getElementById('a_2_3t').disabled = true;
+    });
+
+    a_2_3t.addEventListener("click", () => {
+        document.getElementById("a_2_3t").style.background = "green";
+        document.getElementById("int_2").style.display = "block";
+        document.getElementById("n_2").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_2_1f').disabled = true;
+        document.getElementById('a_2_2f').disabled = true;
+        document.getElementById('a_2_4f').disabled = true;
+        document.getElementById('a_2_3t').disabled = true;
+    });
+
+    n_2.addEventListener("click", () => {
+        document.getElementById("q_2").style.display = "none";
+        document.getElementById("q_3").style.display = "block";
+    });
+
+
+    a_3_1f.addEventListener("click", () => {
+        document.getElementById("a_3_1f").style.background = "red";
+        document.getElementById("a_3_4t").style.background = "green";
+        document.getElementById("int_3").style.display = "block";
+        document.getElementById("n_3").style.display = "block";
+
+        document.getElementById('a_3_1f').disabled = true;
+        document.getElementById('a_3_2f').disabled = true;
+        document.getElementById('a_3_3f').disabled = true;
+        document.getElementById('a_3_4t').disabled = true;
+    });
+
+    a_3_2f.addEventListener("click", () => {
+        document.getElementById("a_3_2f").style.background = "red";
+        document.getElementById("a_3_4t").style.background = "green";
+        document.getElementById("int_3").style.display = "block";
+        document.getElementById("n_3").style.display = "block";
+
+        document.getElementById('a_3_1f').disabled = true;
+        document.getElementById('a_3_2f').disabled = true;
+        document.getElementById('a_3_3f').disabled = true;
+        document.getElementById('a_3_4t').disabled = true;
+    });
+
+    a_3_3f.addEventListener("click", () => {
+        document.getElementById("a_3_3f").style.background = "red";
+        document.getElementById("a_3_4t").style.background = "green";
+        document.getElementById("int_3").style.display = "block";
+        document.getElementById("n_3").style.display = "block";
+
+        document.getElementById('a_3_1f').disabled = true;
+        document.getElementById('a_3_2f').disabled = true;
+        document.getElementById('a_3_3f').disabled = true;
+        document.getElementById('a_3_4t').disabled = true;
+    });
+
+    a_3_4t.addEventListener("click", () => {
+        document.getElementById("a_3_4t").style.background = "green";
+        document.getElementById("int_3").style.display = "block";
+        document.getElementById("n_3").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_3_1f').disabled = true;
+        document.getElementById('a_3_2f').disabled = true;
+        document.getElementById('a_3_3f').disabled = true;
+        document.getElementById('a_3_4t').disabled = true;
+    });
+
+    n_3.addEventListener("click", () => {
+        document.getElementById("q_3").style.display = "none";
+        document.getElementById("q_4").style.display = "block";
+    });
+
+
+
+    a_4_4f.addEventListener("click", () => {
+        document.getElementById("a_4_4f").style.background = "red";
+        document.getElementById("a_4_1t").style.background = "green";
+        document.getElementById("int_4").style.display = "block";
+        document.getElementById("n_4").style.display = "block";
+
+        document.getElementById('a_4_4f').disabled = true;
+        document.getElementById('a_4_2f').disabled = true;
+        document.getElementById('a_4_3f').disabled = true;
+        document.getElementById('a_4_1t').disabled = true;
+    });
+
+    a_4_2f.addEventListener("click", () => {
+        document.getElementById("a_4_2f").style.background = "red";
+        document.getElementById("a_4_1t").style.background = "green";
+        document.getElementById("int_4").style.display = "block";
+        document.getElementById("n_4").style.display = "block";
+
+        document.getElementById('a_4_4f').disabled = true;
+        document.getElementById('a_4_2f').disabled = true;
+        document.getElementById('a_4_3f').disabled = true;
+        document.getElementById('a_4_1t').disabled = true;
+    });
+
+    a_4_3f.addEventListener("click", () => {
+        document.getElementById("a_4_3f").style.background = "red";
+        document.getElementById("a_4_1t").style.background = "green";
+        document.getElementById("int_4").style.display = "block";
+        document.getElementById("n_4").style.display = "block";
+
+        document.getElementById('a_4_4f').disabled = true;
+        document.getElementById('a_4_2f').disabled = true;
+        document.getElementById('a_4_3f').disabled = true;
+        document.getElementById('a_4_1t').disabled = true;
+    });
+
+    a_4_1t.addEventListener("click", () => {
+        document.getElementById("a_4_1t").style.background = "green";
+        document.getElementById("int_4").style.display = "block";
+        document.getElementById("n_4").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_4_4f').disabled = true;
+        document.getElementById('a_4_2f').disabled = true;
+        document.getElementById('a_4_3f').disabled = true;
+        document.getElementById('a_4_1t').disabled = true;
+    });
+
+    n_4.addEventListener("click", () => {
+        document.getElementById("q_4").style.display = "none";
+        document.getElementById("q_5").style.display = "block";
+    });
+
+
+    a_5_4f.addEventListener("click", () => {
+        document.getElementById("a_5_4f").style.background = "red";
+        document.getElementById("a_5_2t").style.background = "green";
+        document.getElementById("int_5").style.display = "block";
+        document.getElementById("n_5").style.display = "block";
+
+        document.getElementById('a_5_4f').disabled = true;
+        document.getElementById('a_5_1f').disabled = true;
+        document.getElementById('a_5_3f').disabled = true;
+        document.getElementById('a_5_2t').disabled = true;
+    });
+
+    a_5_1f.addEventListener("click", () => {
+        document.getElementById("a_5_1f").style.background = "red";
+        document.getElementById("a_5_2t").style.background = "green";
+        document.getElementById("int_5").style.display = "block";
+        document.getElementById("n_5").style.display = "block";
+
+        document.getElementById('a_5_4f').disabled = true;
+        document.getElementById('a_5_1f').disabled = true;
+        document.getElementById('a_5_3f').disabled = true;
+        document.getElementById('a_5_2t').disabled = true;
+    });
+
+    a_5_3f.addEventListener("click", () => {
+        document.getElementById("a_5_3f").style.background = "red";
+        document.getElementById("a_5_2t").style.background = "green";
+        document.getElementById("int_5").style.display = "block";
+        document.getElementById("n_5").style.display = "block";
+
+        document.getElementById('a_5_4f').disabled = true;
+        document.getElementById('a_5_1f').disabled = true;
+        document.getElementById('a_5_3f').disabled = true;
+        document.getElementById('a_5_2t').disabled = true;
+    });
+
+    a_5_2t.addEventListener("click", () => {
+        document.getElementById("a_5_2t").style.background = "green";
+        document.getElementById("int_5").style.display = "block";
+        document.getElementById("n_5").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_5_4f').disabled = true;
+        document.getElementById('a_5_1f').disabled = true;
+        document.getElementById('a_5_3f').disabled = true;
+        document.getElementById('a_5_2t').disabled = true;
+    });
+
+    n_5.addEventListener("click", () => {
+        document.getElementById("q_5").style.display = "none";
+        document.getElementById("q_6").style.display = "block";
+    });
+
+
+
+    a_6_1f.addEventListener("click", () => {
+        document.getElementById("a_6_1f").style.background = "red";
+        document.getElementById("a_6_4t").style.background = "green";
+        document.getElementById("int_6").style.display = "block";
+        document.getElementById("n_6").style.display = "block";
+
+        document.getElementById('a_6_2f').disabled = true;
+        document.getElementById('a_6_1f').disabled = true;
+        document.getElementById('a_6_3f').disabled = true;
+        document.getElementById('a_6_4t').disabled = true;
+    });
+
+    a_6_2f.addEventListener("click", () => {
+        document.getElementById("a_6_2f").style.background = "red";
+        document.getElementById("a_6_4t").style.background = "green";
+        document.getElementById("int_6").style.display = "block";
+        document.getElementById("n_6").style.display = "block";
+
+        document.getElementById('a_6_2f').disabled = true;
+        document.getElementById('a_6_1f').disabled = true;
+        document.getElementById('a_6_3f').disabled = true;
+        document.getElementById('a_6_4t').disabled = true;
+    });
+
+    a_6_3f.addEventListener("click", () => {
+        document.getElementById("a_6_3f").style.background = "red";
+        document.getElementById("a_6_4t").style.background = "green";
+        document.getElementById("int_6").style.display = "block";
+        document.getElementById("n_6").style.display = "block";
+
+        document.getElementById('a_6_2f').disabled = true;
+        document.getElementById('a_6_1f').disabled = true;
+        document.getElementById('a_6_3f').disabled = true;
+        document.getElementById('a_6_4t').disabled = true;
+    });
+
+    a_6_4t.addEventListener("click", () => {
+        document.getElementById("a_6_4t").style.background = "green";
+        document.getElementById("int_6").style.display = "block";
+        document.getElementById("n_6").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_6_2f').disabled = true;
+        document.getElementById('a_6_1f').disabled = true;
+        document.getElementById('a_6_3f').disabled = true;
+        document.getElementById('a_6_4t').disabled = true;
+    });
+
+    n_6.addEventListener("click", () => {
+        document.getElementById("q_6").style.display = "none";
+        document.getElementById("q_7").style.display = "block";
+    });
+
+
+    a_7_4f.addEventListener("click", () => {
+        document.getElementById("a_7_4f").style.background = "red";
+        document.getElementById("a_7_1t").style.background = "green";
+        document.getElementById("int_7").style.display = "block";
+        document.getElementById("n_7").style.display = "block";
+
+        document.getElementById('a_7_2f').disabled = true;
+        document.getElementById('a_7_4f').disabled = true;
+        document.getElementById('a_7_3f').disabled = true;
+        document.getElementById('a_7_1t').disabled = true;
+    });
+
+    a_7_2f.addEventListener("click", () => {
+        document.getElementById("a_7_2f").style.background = "red";
+        document.getElementById("a_7_1t").style.background = "green";
+        document.getElementById("int_7").style.display = "block";
+        document.getElementById("n_7").style.display = "block";
+
+        document.getElementById('a_7_2f').disabled = true;
+        document.getElementById('a_7_4f').disabled = true;
+        document.getElementById('a_7_3f').disabled = true;
+        document.getElementById('a_7_1t').disabled = true;
+    });
+
+    a_7_3f.addEventListener("click", () => {
+        document.getElementById("a_7_3f").style.background = "red";
+        document.getElementById("a_7_1t").style.background = "green";
+        document.getElementById("int_7").style.display = "block";
+        document.getElementById("n_7").style.display = "block";
+
+        document.getElementById('a_7_2f').disabled = true;
+        document.getElementById('a_7_4f').disabled = true;
+        document.getElementById('a_7_3f').disabled = true;
+        document.getElementById('a_7_1t').disabled = true;
+    });
+
+    a_7_1t.addEventListener("click", () => {
+        document.getElementById("a_7_1t").style.background = "green";
+        document.getElementById("int_7").style.display = "block";
+        document.getElementById("n_7").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_7_2f').disabled = true;
+        document.getElementById('a_7_4f').disabled = true;
+        document.getElementById('a_7_3f').disabled = true;
+        document.getElementById('a_7_1t').disabled = true;
+    });
+
+    n_7.addEventListener("click", () => {
+        document.getElementById("q_7").style.display = "none";
+        document.getElementById("q_8").style.display = "block";
+    });
+
+
+    a_8_1f.addEventListener("click", () => {
+        document.getElementById("a_8_1f").style.background = "red";
+        document.getElementById("a_8_4t").style.background = "green";
+        document.getElementById("int_8").style.display = "block";
+        document.getElementById("n_8").style.display = "block";
+
+        document.getElementById('a_8_2f').disabled = true;
+        document.getElementById('a_8_1f').disabled = true;
+        document.getElementById('a_8_3f').disabled = true;
+        document.getElementById('a_8_4t').disabled = true;
+    });
+
+    a_8_2f.addEventListener("click", () => {
+        document.getElementById("a_8_2f").style.background = "red";
+        document.getElementById("a_8_4t").style.background = "green";
+        document.getElementById("int_8").style.display = "block";
+        document.getElementById("n_8").style.display = "block";
+
+        document.getElementById('a_8_2f').disabled = true;
+        document.getElementById('a_8_1f').disabled = true;
+        document.getElementById('a_8_3f').disabled = true;
+        document.getElementById('a_8_4t').disabled = true;
+    });
+
+    a_8_3f.addEventListener("click", () => {
+        document.getElementById("a_8_3f").style.background = "red";
+        document.getElementById("a_8_4t").style.background = "green";
+        document.getElementById("int_8").style.display = "block";
+        document.getElementById("n_8").style.display = "block";
+
+        document.getElementById('a_8_2f').disabled = true;
+        document.getElementById('a_8_1f').disabled = true;
+        document.getElementById('a_8_3f').disabled = true;
+        document.getElementById('a_8_4t').disabled = true;
+    });
+
+    a_8_4t.addEventListener("click", () => {
+        document.getElementById("a_8_4t").style.background = "green";
+        document.getElementById("int_8").style.display = "block";
+        document.getElementById("n_8").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_8_2f').disabled = true;
+        document.getElementById('a_8_1f').disabled = true;
+        document.getElementById('a_8_3f').disabled = true;
+        document.getElementById('a_8_4t').disabled = true;
+    });
+
+    n_8.addEventListener("click", () => {
+        document.getElementById("q_8").style.display = "none";
+        document.getElementById("q_9").style.display = "block";
+    });
+
+
+    a_9_1f.addEventListener("click", () => {
+        document.getElementById("a_9_1f").style.background = "red";
+        document.getElementById("a_9_3t").style.background = "green";
+        document.getElementById("int_9").style.display = "block";
+        document.getElementById("n_9").style.display = "block";
+
+        document.getElementById('a_9_2f').disabled = true;
+        document.getElementById('a_9_1f').disabled = true;
+        document.getElementById('a_9_4f').disabled = true;
+        document.getElementById('a_9_3t').disabled = true;
+    });
+
+    a_9_2f.addEventListener("click", () => {
+        document.getElementById("a_9_2f").style.background = "red";
+        document.getElementById("a_9_3t").style.background = "green";
+        document.getElementById("int_9").style.display = "block";
+        document.getElementById("n_9").style.display = "block";
+
+        document.getElementById('a_9_2f').disabled = true;
+        document.getElementById('a_9_1f').disabled = true;
+        document.getElementById('a_9_4f').disabled = true;
+        document.getElementById('a_9_3t').disabled = true;
+    });
+
+    a_9_4f.addEventListener("click", () => {
+        document.getElementById("a_9_4f").style.background = "red";
+        document.getElementById("a_9_3t").style.background = "green";
+        document.getElementById("int_9").style.display = "block";
+        document.getElementById("n_9").style.display = "block";
+
+        document.getElementById('a_9_2f').disabled = true;
+        document.getElementById('a_9_1f').disabled = true;
+        document.getElementById('a_9_4f').disabled = true;
+        document.getElementById('a_9_3t').disabled = true;
+    });
+
+    a_9_3t.addEventListener("click", () => {
+        document.getElementById("a_9_3t").style.background = "green";
+        document.getElementById("int_9").style.display = "block";
+        document.getElementById("n_9").style.display = "block";
+        test_True += 1;
+
+        document.getElementById('a_9_2f').disabled = true;
+        document.getElementById('a_9_1f').disabled = true;
+        document.getElementById('a_9_4f').disabled = true;
+        document.getElementById('a_9_3t').disabled = true;
+    });
+
+    n_9.addEventListener("click", () => {
+        document.getElementById("q_9").style.display = "none";
+        document.getElementById("last_p").style.display = "block";
+        document.getElementById("last").textContent = test_True;
+    });
+
+
+
+    last_back.addEventListener("click", () => {
+        document.getElementById("last_p").style.display = "none";
+        document.getElementById("main").style.display = "block";
+    });
+
+
 </script>
+<!--document.getElementById("last").textContent = test_True;-->
 </body>
 </html>
