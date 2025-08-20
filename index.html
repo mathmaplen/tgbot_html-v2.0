@@ -58,6 +58,11 @@
             color: black;
         }
 
+        .emoji-rating {
+            font-size: 40px;
+            margin: 20px 0;
+        }
+
     </style>
 
 </head>
@@ -288,7 +293,9 @@
 
 <!--последняя страница-->
 <div id="last_p" style="display: none">
-    <p id="last" style="color: white"></p>
+    <div class="emoji-rating" id="emoji"></div>
+    <div style="color: white">Ваш результат: <span id="last">0</span>/9</div>
+    <div style="color: white" id="result-text"></div>
     <button class="button" id="last_back">В главное меню</button>
 </div>
 
@@ -374,6 +381,136 @@
 
 
     start.addEventListener("click", () => {
+
+        document.getElementById('a_1_1f').disabled = false;
+        document.getElementById('a_1_2f').disabled = false;
+        document.getElementById('a_1_3f').disabled = false;
+        document.getElementById('a_1_4t').disabled = false;
+
+        document.getElementById("a_1_1f").style.background = "white";
+        document.getElementById("a_1_2f").style.background = "white";
+        document.getElementById("a_1_3f").style.background = "white";
+        document.getElementById("a_1_4t").style.background = "white";
+
+        document.getElementById("int_1").style.display = "none";
+        document.getElementById("n_1").style.display = "none";
+
+
+        document.getElementById('a_2_1f').disabled = false;
+        document.getElementById('a_2_2f').disabled = false;
+        document.getElementById('a_2_4f').disabled = false;
+        document.getElementById('a_2_3t').disabled = false;
+
+        document.getElementById("a_2_1f").style.background = "white";
+        document.getElementById("a_2_2f").style.background = "white";
+        document.getElementById("a_2_3t").style.background = "white";
+        document.getElementById("a_2_4f").style.background = "white";
+
+        document.getElementById("int_2").style.display = "none";
+        document.getElementById("n_2").style.display = "none";
+
+
+        document.getElementById('a_3_1f').disabled = false;
+        document.getElementById('a_3_2f').disabled = false;
+        document.getElementById('a_3_3f').disabled = false;
+        document.getElementById('a_3_4t').disabled = false;
+
+        document.getElementById("a_3_1f").style.background = "white";
+        document.getElementById("a_3_2f").style.background = "white";
+        document.getElementById("a_3_3f").style.background = "white";
+        document.getElementById("a_3_4t").style.background = "white";
+
+        document.getElementById("int_3").style.display = "none";
+        document.getElementById("n_3").style.display = "none";
+
+
+        document.getElementById('a_4_1t').disabled = false;
+        document.getElementById('a_4_2f').disabled = false;
+        document.getElementById('a_4_3f').disabled = false;
+        document.getElementById('a_4_4f').disabled = false;
+
+        document.getElementById("a_4_1t").style.background = "white";
+        document.getElementById("a_4_2f").style.background = "white";
+        document.getElementById("a_4_3f").style.background = "white";
+        document.getElementById("a_4_4f").style.background = "white";
+
+        document.getElementById("int_4").style.display = "none";
+        document.getElementById("n_4").style.display = "none";
+
+
+        document.getElementById('a_5_4f').disabled = false;
+        document.getElementById('a_5_1f').disabled = false;
+        document.getElementById('a_5_3f').disabled = false;
+        document.getElementById('a_5_2t').disabled = false;
+
+        document.getElementById("a_5_1f").style.background = "white";
+        document.getElementById("a_5_2t").style.background = "white";
+        document.getElementById("a_5_3f").style.background = "white";
+        document.getElementById("a_5_4f").style.background = "white";
+
+        document.getElementById("int_5").style.display = "none";
+        document.getElementById("n_5").style.display = "none";
+
+
+        document.getElementById('a_6_2f').disabled = false;
+        document.getElementById('a_6_1f').disabled = false;
+        document.getElementById('a_6_3f').disabled = false;
+        document.getElementById('a_6_4t').disabled = false;
+
+        document.getElementById("a_6_1f").style.background = "white";
+        document.getElementById("a_6_2f").style.background = "white";
+        document.getElementById("a_6_3f").style.background = "white";
+        document.getElementById("a_6_4t").style.background = "white";
+
+        document.getElementById("int_6").style.display = "none";
+        document.getElementById("n_6").style.display = "none";
+
+
+        document.getElementById('a_7_2f').disabled = false;
+        document.getElementById('a_7_4f').disabled = false;
+        document.getElementById('a_7_3f').disabled = false;
+        document.getElementById('a_7_1t').disabled = false;
+
+        document.getElementById("a_7_1t").style.background = "white";
+        document.getElementById("a_7_2f").style.background = "white";
+        document.getElementById("a_7_3f").style.background = "white";
+        document.getElementById("a_7_4f").style.background = "white";
+
+        document.getElementById("int_7").style.display = "none";
+        document.getElementById("n_7").style.display = "none";
+
+
+        document.getElementById('a_8_2f').disabled = false;
+        document.getElementById('a_8_1f').disabled = false;
+        document.getElementById('a_8_3f').disabled = false;
+        document.getElementById('a_8_4t').disabled = false;
+
+        document.getElementById("a_8_1f").style.background = "white";
+        document.getElementById("a_8_2f").style.background = "white";
+        document.getElementById("a_8_3f").style.background = "white";
+        document.getElementById("a_8_4t").style.background = "white";
+
+        document.getElementById("int_8").style.display = "none";
+        document.getElementById("n_8").style.display = "none";
+
+
+        document.getElementById('a_9_2f').disabled = false;
+        document.getElementById('a_9_1f').disabled = false;
+        document.getElementById('a_9_4f').disabled = false;
+        document.getElementById('a_9_3t').disabled = false;
+
+        document.getElementById("a_9_1f").style.background = "white";
+        document.getElementById("a_9_2f").style.background = "white";
+        document.getElementById("a_9_3t").style.background = "white";
+        document.getElementById("a_9_4f").style.background = "white";
+
+        document.getElementById("int_9").style.display = "none";
+        document.getElementById("n_9").style.display = "none";
+
+
+        test_True = 0;
+
+
         document.getElementById("main").style.display = "none";
         document.getElementById("q_1").style.display = "block";
     });
@@ -867,6 +1004,20 @@
         document.getElementById("q_9").style.display = "none";
         document.getElementById("last_p").style.display = "block";
         document.getElementById("last").textContent = test_True;
+
+        const emoji = document.getElementById("emoji");
+        const resultText = document.getElementById("result-text");
+
+        if (test_True >= 8) {
+            emoji.textContent = "🎖️🏆👍";
+            resultText.textContent = "Отличный результат! Вы настоящий эксперт в флагах России!";
+        } else if (test_True >= 5) {
+            emoji.textContent = "👍😊";
+            resultText.textContent = "Хороший результат! Вы знаете многое о флагах России!";
+        } else {
+            emoji.textContent = "🤔📚";
+            resultText.textContent = "Есть куда расти! Попробуйте еще раз и узнайте больше о флагах России!";
+        }
     });
 
 
@@ -878,6 +1029,5 @@
 
 
 </script>
-<!--document.getElementById("last").textContent = test_True;-->
 </body>
 </html>
